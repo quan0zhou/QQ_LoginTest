@@ -26,7 +26,7 @@ namespace QQ_LoginTest
             driver.Manage().Window.Maximize();//窗口最大化，便于脚本执行
 
             //设置超时等待(隐式等待)时间设置10秒
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
             IWebDriver login = driver.SwitchTo().Frame(driver.FindElementById("login_frame"));
             login.FindElement(By.Id("switcher_plogin")).Click();
